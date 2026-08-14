@@ -2,7 +2,7 @@ export type FAQ = { question: string; answer: string };
 export type SiteConfig = { name:string; shortName:string; phone:string; phoneHref:string; email:string; hours:string; url:string; areas:string[] };
 export const site: SiteConfig = {
   name:"Bear River Plumbing LLC", shortName:"Bear River Plumbing", phone:"541-399-4962", phoneHref:"tel:+15413994962", email:"BearRiverPlumbing@gmail.com",
-  hours:"Monday–Friday · 8:00 AM–5:00 PM", url:"https://rosybrown-armadillo-385824.hostingersite.com",
+  hours:"Monday–Friday · 9:00 AM–5:00 PM", url:"https://rosybrown-armadillo-385824.hostingersite.com",
   areas:["Alpine, WY","Afton, WY","Star Valley, WY","Jackson Hole, WY","Victor, ID","Driggs, ID","Idaho Falls, ID","Rexburg, ID","Bear Lake County, ID"]
 };
 export const generalFaqs: FAQ[] = [

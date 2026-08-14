@@ -11,7 +11,7 @@ export default function Contact() {
     <section className="contact-grid">
       <article><p className="eyebrow">Call</p><h2><a href={site.phoneHref}>{site.phone}</a></h2><p>Call to discuss your plumbing repair, installation, or project.</p></article>
       <article><p className="eyebrow">Email</p><h2><a href={`mailto:${site.email}`}>{site.email}</a></h2><p>Email the property location and a short description of what you need.</p></article>
-      <article><p className="eyebrow">Hours</p><h2>Monday–Friday</h2><p>8:00 AM–5:00 PM</p></article>
+      <article><p className="eyebrow">Hours</p><h2>Monday–Friday</h2><p>9:00 AM–5:00 PM</p></article>
       <article className="contact-action"><h2>Request service online</h2><p>Share the city, property type, service, and a few project details.</p><Link className="btn" href="/request-service" data-cta="contact-form-link">Open Request Form</Link></article>
     </section>
   </main>;
