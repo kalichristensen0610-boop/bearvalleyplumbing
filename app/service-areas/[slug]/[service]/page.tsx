@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import Link from "../../../../components/ui/HardLink";
 import { notFound } from "next/navigation";
 import { locationBySlug,locations } from "../../../../data/locations";
 import { serviceBySlug,services } from "../../../../data/services";

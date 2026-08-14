@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link";
+import Link from "../ui/HardLink";
 import { useState } from "react";
 import { services } from "../../data/services";
 import { locations } from "../../data/locations";
