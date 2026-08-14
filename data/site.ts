@@ -3,7 +3,7 @@ export type SiteConfig = { name:string; shortName:string; phone:string; phoneHre
 export const site: SiteConfig = {
   name:"Bear River Plumbing LLC", shortName:"Bear River Plumbing", phone:"[PHONE NUMBER]", phoneHref:"#request-service", email:"[EMAIL]",
   hours:"Monday–Friday · 8:00 AM–5:00 PM", url:"https://bear-river-plumbing.sites.openai.com",
-  areas:["Alpine, WY","Afton, WY","Star Valley, WY","Jackson Hole, WY","Idaho Falls, ID","Rexburg, ID","Bear Lake County, ID"]
+  areas:["Alpine, WY","Afton, WY","Star Valley, WY","Jackson Hole, WY","Victor, ID","Driggs, ID","Idaho Falls, ID","Rexburg, ID","Bear Lake County, ID"]
 };
 export const generalFaqs: FAQ[] = [
   {question:"What areas do you serve?",answer:"Bear River Plumbing serves communities across western Wyoming and eastern Idaho, including Alpine, Afton, Star Valley, Jackson Hole, Idaho Falls, Rexburg, and Bear Lake County."},

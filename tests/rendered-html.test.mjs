@@ -9,4 +9,4 @@ async function render(path="/") {
 }
 
 test("server-renders the Bear River homepage",async()=>{const response=await render();assert.equal(response.status,200);const html=await response.text();assert.match(html,/Bear River Plumbing/);assert.match(html,/Built for hard work/);assert.match(html,/Request Service/);assert.doesNotMatch(html,/codex-preview|SkeletonPreview/)});
-test("renders representative service and location routes",async()=>{for(const path of ["/services/water-heaters","/service-areas/alpine-wy"]){const response=await render(path);assert.equal(response.status,200);const html=await response.text();assert.match(html,/Bear River Plumbing/);assert.match(html,/Request Service/)}});
+test("renders representative service and location routes",async()=>{for(const path of ["/services/water-heaters","/service-areas/alpine-wy","/service-areas/victor-id/water-heaters","/service-areas/driggs-id/drain-sewer"]){const response=await render(path);assert.equal(response.status,200);const html=await response.text();assert.match(html,/Bear River Plumbing/);assert.match(html,/Request Service/)}});
