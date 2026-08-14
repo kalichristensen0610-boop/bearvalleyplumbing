@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import Link from "../ui/HardLink";
 import { useEffect, useState } from "react";
 import { services } from "../../data/services";
@@ -16,6 +17,7 @@ export function Header(){
   return <>
     <div className="utility"><span>{site.hours}</span><a href={site.phoneHref} data-cta="utility-call">Call {site.phone}</a></div>
     <header className={headerHidden?"site-header header-hidden":"site-header"}>
+      <Link href="/" className="brand" aria-label="Bear River Plumbing home" onClick={closeMenus}><Image src="/bear-river-logo-transparent.png" width={82} height={82} alt="Bear River Plumbing LLC" priority /></Link>
       <button className="menu-button" aria-expanded={open} aria-controls="primary-nav" onClick={()=>{setOpen(!open);setActiveMenu(null)}}><span className="sr-only">Toggle menu</span>{open?"Close":"Menu"}</button>
       <nav id="primary-nav" className={open?"nav open":"nav"} aria-label="Primary navigation">
         <Link href="/" onClick={closeMenus}>Home</Link>

@@ -7,7 +7,7 @@ import { CTA, FAQList, LocationGrid, SectionHead, ServiceGrid, TrustBar } from "
 
 export const metadata = {
   title: "Wyoming & Idaho Plumbing",
-  description: "Dependable residential and commercial plumbing across Star Valley, Jackson Hole, Bear Lake County, Idaho Falls, Rexburg, and nearby communities.",
+  description: "Dependable residential and new construction plumbing across Star Valley, Jackson Hole, Bear Lake County, Idaho Falls, Rexburg, and nearby communities.",
 };
 
 const mapUrl = (name: string, state: string) =>
@@ -18,15 +18,14 @@ export default function Home() {
     <section className="home-hero">
       <Image className="hero-background" src="/hero-bear-river.png" alt="Grizzly bear emerging from a mountain river in the Bear River Plumbing service region" fill priority sizes="100vw" />
       <div className="home-hero-copy">
-        <Image className="hero-logo" src="/bear-river-logo-transparent.png" alt="Bear River Plumbing LLC" width={230} height={230} priority />
         <p className="eyebrow">Mountain-country plumbing · Wyoming & Idaho</p>
         <h1>Plumbing made for mountain country.</h1>
-        <p className="lead">Straight answers, dependable workmanship, and residential and commercial plumbing across the communities we call home.</p>
+        <p className="lead">Straight answers, dependable workmanship, and residential and new construction plumbing across the communities we call home.</p>
         <div className="hero-actions"><Link className="btn" href="/request-service" data-cta="hero-request-service">Request Service</Link><a className="inline-link light" href={site.phoneHref} data-cta="hero-call">Call {site.phone} →</a></div>
       </div>
     </section>
     <TrustBar />
-    <section className="section"><SectionHead eyebrow="What we do" title="Plumbing help for the whole property." lead="From a leaking fixture to a full commercial project, start with the service that best matches what you need." /><ServiceGrid items={services} /></section>
+    <section className="section"><SectionHead eyebrow="What we do" title="Plumbing help for the whole home." lead="From a leaking fixture to a complete new-home plumbing system, start with the service that best matches what you need." /><ServiceGrid items={services} /></section>
     <section className="split-section">
       <article><p className="eyebrow">Residential plumbing</p><h2>Take care of the plumbing that keeps home running.</h2><p>Plumbing problems are disruptive enough. Bear River Plumbing makes the next step simple with clear communication and practical help for repairs, water heaters, drains, piping, remodels, and water quality.</p><Link className="inline-link" href="/residential-plumbing">Explore residential plumbing →</Link></article>
       <article className="dark"><p className="eyebrow">New construction plumbing</p><h2>Built right from the underground up.</h2><p>Bear River Plumbing works with new home builders, general contractors, and homeowners to coordinate plumbing from early planning and rough-in through fixtures and final connections.</p><Link className="inline-link light" href="/services/new-construction">Explore new construction plumbing →</Link></article>

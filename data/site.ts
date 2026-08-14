@@ -7,6 +7,6 @@ export const site: SiteConfig = {
 };
 export const generalFaqs: FAQ[] = [
   {question:"What areas do you serve?",answer:"Bear River Plumbing serves communities across western Wyoming and eastern Idaho, including Alpine, Afton, Star Valley, Jackson Hole, Victor, Driggs, Idaho Falls, Rexburg, and Bear Lake County."},
-  {question:"Do you handle residential and commercial plumbing?",answer:"Yes. We support homeowners as well as businesses, contractors, property managers, developers, and other organizations."},
+  {question:"Do you handle residential and new construction plumbing?",answer:"Yes. We support homeowners as well as builders, contractors, developers, and homeowners."},
   {question:"How do I request service?",answer:"Use our request form with a short description of the problem or project. Submitting a request does not confirm an appointment; our team will follow up to discuss next steps."}
 ];

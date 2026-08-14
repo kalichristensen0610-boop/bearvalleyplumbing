@@ -13,9 +13,9 @@ const manrope = Manrope({
 export const metadata: Metadata = {
   metadataBase: new URL("https://rosybrown-armadillo-385824.hostingersite.com"),
   title: { default:"Bear River Plumbing LLC", template:"%s | Bear River Plumbing" },
-  description: "Local, family-owned residential and commercial plumbing across Wyoming and Idaho communities.",
-  openGraph:{title:"Bear River Plumbing LLC",description:"Residential and commercial plumbing across Wyoming and Idaho.",type:"website",images:[{url:"/og.png",width:1734,height:907,alt:"Bear River Plumbing LLC"}]},
-  twitter:{card:"summary_large_image",title:"Bear River Plumbing LLC",description:"Residential and commercial plumbing across Wyoming and Idaho.",images:["/og.png"]},
+  description: "Local, family-owned residential and new construction plumbing across Wyoming and Idaho communities.",
+  openGraph:{title:"Bear River Plumbing LLC",description:"Residential and new construction plumbing across Wyoming and Idaho.",type:"website",images:[{url:"/og.png",width:1734,height:907,alt:"Bear River Plumbing LLC"}]},
+  twitter:{card:"summary_large_image",title:"Bear River Plumbing LLC",description:"Residential and new construction plumbing across Wyoming and Idaho.",images:["/og.png"]},
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
