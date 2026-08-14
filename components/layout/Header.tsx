@@ -8,12 +8,14 @@ import { site } from "../../data/site";
 export function Header(){
   const [open,setOpen]=useState(false);
   const [activeMenu,setActiveMenu]=useState<"services"|"areas"|null>(null);
+  const [headerHidden,setHeaderHidden]=useState(false);
   useEffect(()=>{const restore=(event:PageTransitionEvent)=>{if(event.persisted)setOpen(true)};window.addEventListener("pageshow",restore);return()=>window.removeEventListener("pageshow",restore)},[]);
+  useEffect(()=>{let lastY=window.scrollY;const handleScroll=()=>{const nextY=window.scrollY;if(nextY<60)setHeaderHidden(false);else if(Math.abs(nextY-lastY)>6)setHeaderHidden(nextY>lastY&&!open);lastY=nextY};window.addEventListener("scroll",handleScroll,{passive:true});return()=>window.removeEventListener("scroll",handleScroll)},[open]);
   function closeMenus(){setOpen(false);setActiveMenu(null)}
   function toggleMenu(menu:"services"|"areas"){setActiveMenu(current=>current===menu?null:menu)}
   return <>
     <div className="utility"><span>{site.hours}</span><a href={site.phoneHref} data-cta="utility-call">Call {site.phone}</a></div>
-    <header className="site-header">
+    <header className={headerHidden?"site-header header-hidden":"site-header"}>
       <button className="menu-button" aria-expanded={open} aria-controls="primary-nav" onClick={()=>{setOpen(!open);setActiveMenu(null)}}><span className="sr-only">Toggle menu</span>{open?"Close":"Menu"}</button>
       <nav id="primary-nav" className={open?"nav open":"nav"} aria-label="Primary navigation">
         <Link href="/" onClick={closeMenus}>Home</Link>
