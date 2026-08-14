@@ -12,7 +12,6 @@ const staticRoutes = [
   "/contact",
   "/request-service",
   "/residential-plumbing",
-  "/commercial-plumbing",
   "/services",
   "/service-areas",
 ];
@@ -26,6 +25,7 @@ const serviceSlugs = [
   "water-quality",
   "gas-line-services",
   "plumbing-excavation",
+  "new-construction",
 ];
 
 const locationSlugs = [
