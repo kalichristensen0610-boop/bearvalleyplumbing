@@ -18,7 +18,7 @@ export default function Home() {
     <section className="home-hero">
       <Image className="hero-background" src="/hero-bear-river.png" alt="Grizzly bear emerging from a mountain river in the Bear River Plumbing service region" fill priority sizes="100vw" />
       <div className="home-hero-copy">
-        <Image className="hero-logo" src="/bear-river-logo-transparent.png" alt="Bear River Plumbing LLC" width={148} height={148} priority />
+        <Image className="hero-logo" src="/bear-river-logo-transparent.png" alt="Bear River Plumbing LLC" width={230} height={230} priority />
         <p className="eyebrow">Mountain-country plumbing · Wyoming & Idaho</p>
         <h1>Plumbing made for mountain country.</h1>
         <p className="lead">Straight answers, dependable workmanship, and residential and commercial plumbing across the communities we call home.</p>
