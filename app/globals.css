@@ -116,3 +116,10 @@ body{font-family:var(--font-manrope),Arial,sans-serif;font-size:16px;color:#1214
 
 /* Single-logo header treatment */
 .header-actions{margin-left:auto}
+
+/* Click-to-open organized navigation groups */
+.nav-top{padding:0;border:0;background:transparent;color:inherit;font:inherit;cursor:pointer}
+.nav-top span{transition:transform .18s}.nav-group.expanded .nav-top span{transform:rotate(180deg)}
+.nav-group:not(.expanded) .dropdown{opacity:0!important;visibility:hidden!important;pointer-events:none!important;transform:translate(-50%,8px)!important}
+.nav-group.expanded .dropdown{opacity:1!important;visibility:visible!important;pointer-events:auto!important;transform:translate(-50%,0)!important}
+@media(max-width:1080px){.nav.open .nav-top{width:100%;justify-content:space-between;padding:.85rem 0}.nav.open .nav-group:not(.expanded) .dropdown{display:none}.nav.open .nav-group.expanded .dropdown{display:grid;transform:none!important}}
