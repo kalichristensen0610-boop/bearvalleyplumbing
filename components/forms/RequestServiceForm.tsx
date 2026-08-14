@@ -57,7 +57,7 @@ export function RequestServiceForm({ origin = "request-service" }: { origin?: st
       <label>Email<input name="email" type="email" autoComplete="email" /></label>
       <label>Service address<input name="address" autoComplete="street-address" /></label>
       <label>City*<input name="city" autoComplete="address-level2" required /></label>
-      <label>Property type*<select name="customerType" required defaultValue=""><option value="" disabled>Select one</option><option>Residential</option><option>Commercial</option></select></label>
+      <label>Project type*<select name="customerType" required defaultValue=""><option value="" disabled>Select one</option><option>Residential service</option><option>New home construction</option><option>Builder or contractor inquiry</option></select></label>
       <label>Service needed*<select name="service" required defaultValue=""><option value="" disabled>Select a service</option>{services.map(service => <option key={service.slug} value={service.name}>{service.name}</option>)}<option>Not sure</option></select></label>
       <label>Preferred contact<select name="preferredContact" defaultValue="Phone"><option>Phone</option><option>Email</option><option>Text</option></select></label>
       <label className="full">Tell us about the problem or project*<textarea name="description" rows={5} required /></label>
