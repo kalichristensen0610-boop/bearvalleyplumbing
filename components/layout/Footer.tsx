@@ -7,7 +7,7 @@ import { site } from "../../data/site";
 export function Footer() {
   return <>
     <footer className="footer" id="contact">
-      <div className="footer-brand"><Image src="/bear-river-logo.png" width={150} height={150} alt="Bear River Plumbing LLC" /><p>Local, family-owned plumbing professionals serving homes, businesses, and projects across the communities we call home.</p></div>
+      <div className="footer-brand"><Image src="/bear-river-logo-transparent.png" width={190} height={190} alt="Bear River Plumbing LLC" /><p>Local, family-owned plumbing professionals serving homes, businesses, and projects across the communities we call home.</p></div>
       <div><h2>Plumbing</h2>{services.slice(0, 5).map(service => <Link key={service.slug} href={`/services/${service.slug}`}>{service.name}</Link>)}<Link href="/commercial-plumbing">Commercial Plumbing</Link></div>
       <div><h2>Service Areas</h2>{locations.slice(0, 5).map(location => <Link key={location.slug} href={`/service-areas/${location.slug}`}>{location.name}</Link>)}<Link href="/service-areas">View all areas</Link></div>
       <div><h2>Contact</h2><p><a href={site.phoneHref}>{site.phone}</a><br /><a href={`mailto:${site.email}`}>{site.email}</a></p><p>{site.hours}</p><Link className="btn btn-light" href="/request-service">Request Service</Link></div>
