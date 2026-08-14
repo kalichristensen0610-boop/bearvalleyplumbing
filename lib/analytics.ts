@@ -1,0 +1,1 @@
+export const ctaIds={headerCall:"header-call",headerRequest:"header-request-service",heroCall:"hero-call",heroRequest:"hero-request-service",mobileCall:"mobile-call",mobileRequest:"mobile-request",serviceRequest:"service-page-request",locationRequest:"location-page-request",commercialInquiry:"commercial-inquiry",formSubmit:"request-form-submit"} as const;
