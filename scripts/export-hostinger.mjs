@@ -23,8 +23,6 @@ const serviceSlugs = [
   "pipe-leak-repair",
   "remodel-plumbing",
   "water-quality",
-  "gas-line-services",
-  "plumbing-excavation",
   "new-construction",
 ];
 
