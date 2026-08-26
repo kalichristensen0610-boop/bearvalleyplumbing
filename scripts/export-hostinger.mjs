@@ -18,12 +18,11 @@ const staticRoutes = [
 
 const serviceSlugs = [
   "plumbing-repairs",
-  "drain-sewer",
   "water-heaters",
-  "pipe-leak-repair",
-  "remodel-plumbing",
-  "water-quality",
-  "new-construction",
+  "water-treatment",
+  "kitchen-bath-plumbing",
+  "repiping-services",
+  "drain-cleaning",
 ];
 
 const locationSlugs = [
