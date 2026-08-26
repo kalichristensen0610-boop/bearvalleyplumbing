@@ -7,4 +7,13 @@ export function AreaServiceGrid({items,location}:{items:Service[];location:Locat
 export function LocationGrid({items}:{items:Location[]}){return <div className="location-grid">{items.map(l=><Link className="location-card" href={`/service-areas/${l.slug}`} key={l.slug}><span>{l.state}</span><h3>{l.name}</h3><p>{l.region}</p><b aria-hidden="true">→</b></Link>)}</div>}
 export function FAQList({items}:{items:FAQ[]}){return <div className="faq-list">{items.map((f,i)=><details key={f.question} open={i===0}><summary>{f.question}<span aria-hidden="true">+</span></summary><p>{f.answer}</p></details>)}</div>}
 export function CTA({title="Ready to talk about your plumbing needs?",text="Tell us what is happening and where. We’ll follow up to confirm coverage and discuss the next step.",id="section-request"}:{title?:string;text?:string;id?:string}){return <section className="cta"><div><p className="eyebrow">Bear River Plumbing</p><h2>{title}</h2><p>{text}</p></div><div><Link className="btn btn-light" href="/request-service" data-cta={id}>Request Service</Link><a href={site.phoneHref} data-cta={`${id}-call`}>Call {site.phone}</a></div></section>}
-export function TrustBar(){return <section className="trust-bar"><div><strong>Family Owned</strong><span>Local roots and personal service</span></div><div><strong>Residential Plumbing</strong><span>Repairs, upgrades, and home systems</span></div><div><strong>New Construction</strong><span>Plumbing coordination for new homes</span></div><div><strong>Quality Workmanship</strong><span>Care for the work and the property</span></div></section>}
+const benefitIcons = {
+  clock:<><circle cx="12" cy="12" r="8"/><path d="M12 7v5l3 2"/></>,
+  message:<><path d="M4 5h16v11H9l-5 4V5Z"/><path d="m8 9 8 4M16 9l-8 4"/></>,
+  dollar:<><circle cx="12" cy="12" r="8"/><path d="M14.5 8.5h-3a2 2 0 0 0 0 4h1a2 2 0 0 1 0 4h-3M12 6.5v2m0 8v2"/></>,
+  clean:<><path d="M9 4h6l1 4 3 2v9H5v-9l3-2 1-4Z"/><path d="M9 13h6M8 16h8"/></>,
+  calendar:<><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M8 3v4m8-4v4M4 10h16m-9 4 1.5 1.5L16 12"/></>,
+  shield:<><path d="M12 3 5 6v5c0 4.6 2.9 7.9 7 10 4.1-2.1 7-5.4 7-10V6l-7-3Z"/><path d="m9 12 2 2 4-4"/></>
+};
+const benefits=[["clock","Two-Hour Appointment Windows"],["message","No Sales Pitch"],["dollar","$0 Dispatch Fee"],["clean","Clean & Respectful Technicians"],["calendar","Same-Day Appointments"],["shield","Licensed & Insured"]] as const;
+export function TrustBar(){return <section className="trust-bar" aria-label="Customer benefits">{benefits.map(([icon,label])=><div key={label}><svg viewBox="0 0 24 24" aria-hidden="true">{benefitIcons[icon]}</svg><strong>{label}</strong></div>)}</section>}
