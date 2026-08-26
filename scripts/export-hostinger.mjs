@@ -16,6 +16,7 @@ const staticRoutes = [
   "/service-areas",
 ];
 
+// Keep the static export aligned with the customer-facing service directory.
 const serviceSlugs = [
   "plumbing-repairs",
   "water-heaters",
