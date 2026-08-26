@@ -141,3 +141,13 @@ body{font-family:var(--font-manrope),Arial,sans-serif;font-size:16px;color:#1214
 .trust-bar strong{max-width:150px;font-size:.82rem;line-height:1.3}
 @media(max-width:1080px){.trust-bar{grid-template-columns:repeat(3,1fr)}.trust-bar div:nth-child(3){border-right:0}.trust-bar div:nth-child(-n+3){border-bottom:1px solid #e1e4e7}}
 @media(max-width:620px){.trust-bar{grid-template-columns:repeat(2,1fr);width:92vw}.trust-bar div{padding:1.15rem .7rem}.trust-bar div:nth-child(3){border-right:1px solid #e1e4e7}.trust-bar div:nth-child(2n){border-right:0}.trust-bar div:nth-child(-n+4){border-bottom:1px solid #e1e4e7}.trust-bar strong{font-size:.76rem}}
+
+/* More readable type scale across the site */
+body{font-size:18px}
+.nav a,.nav-top{font-size:.95rem}
+.call-link{font-size:.95rem}
+.utility{font-size:.86rem}
+.section-head>p:last-child,.service-card p,.split-section p:not(.eyebrow),.why-list p,.family-section p,.service-detail p,.local-detail p,.values p,.contact-grid p{font-size:1.06rem}
+.service-card a,.dropdown a,.footer a{font-size:.94rem}
+.trust-bar strong{font-size:.9rem}
+@media(max-width:760px){body{font-size:17px}.nav a,.nav-top{font-size:1rem}}
