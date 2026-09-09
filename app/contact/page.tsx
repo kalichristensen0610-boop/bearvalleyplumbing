@@ -2,7 +2,7 @@ import Link from "../../components/ui/HardLink";
 import { Breadcrumbs, PageHero } from "../../components/ui/SiteComponents";
 import { site } from "../../data/site";
 
-export const metadata = { title: "Contact", description: "Contact Bear River Plumbing about residential or new construction plumbing across Wyoming and Idaho." };
+export const metadata = { title: "Contact", description: "Contact Bear River Plumbing about residential or new construction plumbing across Eastern Idaho and the Treasure Valley." };
 
 export default function Contact() {
   return <main>

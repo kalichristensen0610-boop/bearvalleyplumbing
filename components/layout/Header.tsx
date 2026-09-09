@@ -28,7 +28,7 @@ export function Header(){
         </div>
         <div className={activeMenu==="areas"?"nav-group expanded":"nav-group"}>
           <button className="nav-top" type="button" aria-expanded={activeMenu==="areas"} aria-controls="areas-menu" onClick={()=>toggleMenu("areas")}>Service Areas <span aria-hidden="true">⌄</span></button>
-          <div id="areas-menu" className="dropdown areas-dropdown"><div><p>Wyoming</p>{locations.filter(l=>l.state==="Wyoming").map(l=><Link onClick={closeMenus} key={l.slug} href={`/service-areas/${l.slug}`}>{l.name}</Link>)}</div><div><p>Idaho</p>{locations.filter(l=>l.state==="Idaho").map(l=><Link onClick={closeMenus} key={l.slug} href={`/service-areas/${l.slug}`}>{l.name}</Link>)}</div><div className="dropdown-feature"><strong>Local service pages</strong><span>Choose an area, then browse individual plumbing services available for that market.</span><Link onClick={closeMenus} href="/service-areas">View all areas →</Link></div></div>
+          <div id="areas-menu" className="dropdown areas-dropdown"><div><p>Eastern Idaho</p>{locations.filter(l=>l.slug!=="treasure-valley-id").map(l=><Link onClick={closeMenus} key={l.slug} href={`/service-areas/${l.slug}`}>{l.name}</Link>)}</div><div><p>Treasure Valley</p>{locations.filter(l=>l.slug==="treasure-valley-id").map(l=><Link onClick={closeMenus} key={l.slug} href={`/service-areas/${l.slug}`}>{l.name}</Link>)}</div><div className="dropdown-feature"><strong>Local service pages</strong><span>Choose an Idaho area, then browse individual plumbing services available for that market.</span><Link onClick={closeMenus} href="/service-areas">View all areas →</Link></div></div>
         </div>
         <Link href="/contact" onClick={closeMenus}>Contact</Link>
       </nav>

@@ -27,15 +27,12 @@ const serviceSlugs = [
 ];
 
 const locationSlugs = [
-  "alpine-wy",
-  "afton-wy",
-  "star-valley-wy",
-  "jackson-hole-wy",
   "victor-id",
   "driggs-id",
   "idaho-falls-id",
   "rexburg-id",
   "bear-lake-county-id",
+  "treasure-valley-id",
 ];
 
 const routes = [
