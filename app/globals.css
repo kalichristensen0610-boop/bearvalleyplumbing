@@ -151,3 +151,8 @@ body{font-size:18px}
 .service-card a,.dropdown a,.footer a{font-size:.94rem}
 .trust-bar strong{font-size:.9rem}
 @media(max-width:760px){body{font-size:17px}.nav a,.nav-top{font-size:1rem}}
+
+/* Wide transparent Bear River brand mark */
+.brand img{width:170px;height:auto;max-height:88px;object-fit:contain}
+.footer-brand img{width:min(280px,100%);height:auto}
+@media(max-width:760px){.brand img{width:132px;height:auto;max-height:70px}}
