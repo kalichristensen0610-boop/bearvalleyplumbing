@@ -19,11 +19,12 @@ const staticRoutes = [
 // Keep the static export aligned with the customer-facing service directory.
 const serviceSlugs = [
   "plumbing-repairs",
+  "drain-sewer",
   "water-heaters",
-  "water-treatment",
-  "kitchen-bath-plumbing",
-  "repiping-services",
-  "drain-cleaning",
+  "pipe-leak-repair",
+  "remodel-plumbing",
+  "water-quality",
+  "new-construction",
 ];
 
 const locationSlugs = [
